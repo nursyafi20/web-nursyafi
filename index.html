@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign In | Kuliah Umum MICE 2026</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#email">Lewati ke formulir</a>
+
+  <div class="page">
+
+    <!-- Kolom kiri: ilustrasi / artwork branding -->
+    <section class="artwork" aria-label="Ilustrasi branding Kuliah Umum MICE 2026">
+      <div class="artwork__content">
+        <p class="artwork__title">Teknologi bertemu industri kreatif.</p>
+        <p class="artwork__text">Masuk untuk mengakses materi, jadwal, dan sertifikat Kuliah Umum MICE 2026.</p>
+      </div>
+    </section>
+
+    <!-- Kolom kanan: form sign in -->
+    <main class="auth">
+      <section class="auth__card" aria-labelledby="signin-title">
+        <img class="auth__logo" src="img/logo.png" alt="Logo Kuliah Umum MICE 2026" width="112" height="112">
+
+        <h1 id="signin-title" class="auth__title">Sign in</h1>
+        <p class="auth__subtitle">Selamat datang kembali. Silakan masuk ke akun Anda.</p>
+
+        <button type="button" class="btn btn--google">
+          <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h6.5a5.6 5.6 0 0 1-2.4 3.7v3h3.9c2.3-2.1 3.5-5.2 3.5-8.9z"/>
+            <path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.9-3c-1.1.7-2.5 1.2-4 1.2-3.1 0-5.7-2.1-6.6-4.9H1.4v3.1A12 12 0 0 0 12 24z"/>
+            <path fill="#FBBC05" d="M5.4 14.4a7.2 7.2 0 0 1 0-4.8V6.5H1.4a12 12 0 0 0 0 10.9l4-3z"/>
+            <path fill="#EA4335" d="M12 4.8c1.8 0 3.3.6 4.6 1.8l3.4-3.4A12 12 0 0 0 1.4 6.5l4 3.1C6.3 6.9 8.9 4.8 12 4.8z"/>
+          </svg>
+          Sign in with Google
+        </button>
+
+        <div class="divider" role="separator" aria-label="atau">
+          <span class="divider__text">or</span>
+        </div>
+
+        <form class="form" action="#" method="post">
+          <div class="field">
+            <label class="field__label" for="email">Email atau username</label>
+            <input class="field__input" type="text" id="email" name="email" placeholder="nama@email.com" autocomplete="username" required>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="password">Password</label>
+            <div class="field__wrap">
+              <input class="field__input field__input--icon" type="password" id="password" name="password" placeholder="Masukkan password" autocomplete="current-password" required>
+              <button type="button" class="field__toggle" id="togglePassword" aria-label="Tampilkan password" aria-pressed="false" aria-controls="password">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/>
+                  <circle cx="12" cy="12" r="3"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="check">
+              <input class="check__input" type="checkbox" id="remember" name="remember">
+              <label class="check__label" for="remember">Remember Me</label>
+            </div>
+            <a class="link" href="#">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="btn btn--primary">Sign In</button>
+        </form>
+
+        <p class="auth__footer">Belum punya akun? <a class="link" href="#">Daftar sekarang</a></p>
+      </section>
+    </main>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
